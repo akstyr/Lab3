@@ -5,10 +5,8 @@ public proverka
 section '.proverka' executable
 
 proverka:
-	mov rcx, rdi ;element
-	mov rax, 0 ;hranenie elementa
-	.main:		
-		mov rax, rcx
+	mov rax, rdi ;element
+	.main:
 		cmp rax, 1
 		jl .next
 		mov rax, 0
